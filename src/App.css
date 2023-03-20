@@ -1,38 +1,192 @@
-.App {
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(18, 6, 38, 1);
+  color: White;
+}
+
+/* Global Declaration */
+.d-flex {
+  display: flex;
+}
+
+/* Accessing Navbar.js */
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  padding: 3px;
+  margin-bottom: 50px;
+}
+.navbar img {
+  width: 200px;
+  height: 60px;
+  padding: 1px;
+}
+
+.navRoutes {
+  /* background-color: rgb(33, 9, 71); */
+  background: rgb(29, 9, 47);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.navRoutes ul {
+  list-style-type: none;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.navRoutes ul li {
+  float: left;
+  padding: 3px 25px;
+  font-size: 16px;
+}
+.navRoutes ul li a {
+  color: White;
+  text-decoration: none;
+}
+
+.navRoutes .active {
+  background-color: rgb(47, 18, 95);
+  padding: 5px 25px;
+  border-radius: 15px;
+}
+
+.navbar button {
+  padding: 10px 15px;
+  color: rgba(18, 6, 38, 1);
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+}
+
+/* Accessing Home.js */
+.arrowLogo {
+  width: 200px;
+}
+.home {
+  margin: auto;
+  padding: 5px;
+  width: max-content;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home .pt1 {
+  font-size: 36px;
+  color: rgb(231, 228, 228);
+}
+.home .ddomain {
+  font-size: 42px;
+}
+.home .pt2 {
+  font-size: 20px;
+  color: rgb(214, 209, 209);
+}
+.home .pt2 span {
+  color: rgba(186, 66, 226, 1);
+}
+.TokenDiv {
+  position: relative;
+  margin-bottom: 20px;
+}
+.tokenLogo {
+  position: absolute;
+  top: 12px;
+  right: -100px;
+  width: 90px;
+}
+.personLogo {
+  position: absolute;
+  top: 0px;
+  left: -160px;
+  height: 300px;
+  z-index: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Accessing homeForm.js */
+.homeForm {
+  width: max-content;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 100px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.homeForm input {
+  padding: 10px 5px;
+  margin: 5px 8px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+}
+.homeForm label {
+  font-size: 12px;
+}
+.formDomain {
+  width: 340px;
+  position: relative;
+  z-index: 20;
+}
+.formTypeDiv {
+  position: relative;
+}
+.formType {
+  width: 70px;
+  text-align: center;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.formTypeRef {
+  background-color: rgb(255, 255, 255);
+  width: 70px;
+  padding: 10px;
+  position: absolute;
+  top: 67px;
+  left: 8px;
+  color: black;
+  opacity: 0.8;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.formPrice {
+  width: 110px;
+}
+.homeForm button {
+  background-color: blue;
   color: white;
+  padding: 8px 15px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  margin-top: 22px;
+  font-size: 25px;
+  padding-top: 12px;
+  padding-bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Accessing homeFooter.js */
+.homeFooter {
+  margin: auto;
+  width: max-content;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.homeFooter .div1 {
+  color: rgb(189, 186, 186);
+  font-size: 18px;
+}
+.homeFooter img {
+  width: 40px;
+}
+.hfi {
+  align-items: center;
+}
+.div2 div {
+  margin: 20px 35px;
+}
+.arbitrum {
+  letter-spacing: 5px;
 }
